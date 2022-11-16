@@ -1,0 +1,185 @@
+/* styling the navbar */
+* {
+  background-color: white;
+}
+
+/* 
+block class is common to all the sections so we have done the common styling on it*/
+.block {
+  font: Gilroy;
+  font-weight: 600;
+  margin: 10rem 0rem;
+}
+
+
+/* block1 is a class which contains the opening image under the navbar */
+/* styling block1
+       1.max-width ensures that the element takes max 100% width of its parent 
+       2. to hide horizontal scrolling I have used overflow */
+.block1>img {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+
+/* block2 is a class given to section and div element. It contains the second section of our page
+that has a description about pitching to coindcx */
+.block2 {
+  margin: 2rem 0rem;
+}
+
+.block2>.calendar {
+  margin: 2rem 4rem;
+}
+
+.block2>button {
+  border-radius: 10px;
+}
+
+
+/* 
+block3 is a class given to the third section element
+It has two side by side divs*/
+/* styling block3 
+      1. display has been set to row flex
+ */
+.block3 {
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* block4 class is applied on the fourth section which contains info about mentoring session */
+/* styling the block4 */
+
+/* 1. Heading */
+.block4>h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 32px;
+  line-height: 38.18px;
+
+}
+
+/* 2. styling each div containing a mentor */
+.block4>.view-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* 3. styling of image of mentor */
+.mentor>img {
+  border-radius: 6px;
+  max-width: 250px;
+  height: 250px;
+  aspect-ratio: 1;
+  min-width: 150px;
+  width: 220px;
+  overflow: hidden;
+  margin: 12px;
+}
+
+/* 4. styling the names  */
+
+.view-content>.mentor {
+  font-style: normal;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #000000;
+}
+
+
+/* FAQ section is contained in the class=block5 */
+.block5>h2 {
+  margin: 20px 0px;
+  font-size: 3rem;
+
+}
+
+.view-content {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+/* Apply now button styling */
+.apply-now {
+  position: absolute;
+  width: 20rem;
+  height: 48px;
+  margin: 2rem;
+  background: #407BFF;
+  border-radius: 12px;
+}
+
+/* footer styling */
+.footer {
+  margin-top: 14rem;
+}
+
+
+
+/* Responsive css */
+
+@media (max-width:719px) {
+  .block3 {
+    display: flex;
+    flex-direction: column;
+    background-color: grey;
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  .v1 {
+    display: none;
+  }
+  .box{
+    border: 3px solid black;
+    margin: 1rem;
+   
+  }
+  .view-content{
+    
+  }
+}
+
+@media screen and (min-width:720px) {
+  .block3>.view-content {
+    margin: 0rem 10rem;
+  }
+
+  .block3>.view-content>p {
+    color: grey;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  h1 {
+    font-size: 5rem;
+    font-weight: 600;
+  }
+
+  /* Styling the vertical line in this block */
+  .vl {
+    border-left: 3px solid black;
+    height: 30rem;
+    /* border-image: linear-gradient(#e66465, #9198e5); */
+
+
+  }
+}
